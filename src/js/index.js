@@ -1,8 +1,8 @@
 import $ from 'jquery';
-import furnitureData from './furniture-data';
-import lightingData from './lighting-data';
-import furnitureData from './wallcoverings-data';
-import furnitureData from './textiles-data';
+// import FurnitureData from './furniture-data';
+// import LightingData from './lighting-data';
+// import WallcoveringsData from './wallcoverings-data';
+// import TextilesData from './textiles-data';
 
 
 
@@ -41,24 +41,28 @@ function nextManu() {
 	return getCurrentImage();
 }
 
-// var data = [
-// 	{ manu: 'Casella', images: [
-// 		'./images/1.jpg',
-// 		'./images/66.jpg',
-// 		'./images/8.jpg',
-// 		'./images/14.jpg',
-// 		'./images/16.jpg'
-// 	]},
 
-// 	{ manu: 'Nilson', images: [
-// 		'http://fillmurray.com/20/20/n1',
-// 		'http://fillmurray.com/20/20/n2',
-// 		'http://fillmurray.com/20/20/n3',
-// 		'http://fillmurray.com/20/20/n4',
-// 		'http://fillmurray.com/20/20/n5'
-// 	]}
-// ];
 
+var data = [
+	{ manu: 'Casella', images: [
+		'./images/1.jpg',
+		'./images/66.jpg',
+		'./images/8.jpg',
+		'./images/14.jpg',
+		'./images/16.jpg'
+	]},
+
+	{ manu: 'Nilson', images: [
+		'http://fillmurray.com/20/20/n1',
+		'http://fillmurray.com/20/20/n2',
+		'http://fillmurray.com/20/20/n3',
+		'http://fillmurray.com/20/20/n4',
+		'http://fillmurray.com/20/20/n5'
+	]}
+];
+
+
+$('.app').append(getCurrentImage(data));
 
 
 // return `
