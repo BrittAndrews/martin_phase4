@@ -1,7 +1,10 @@
+import $ from 'jquery';
+import React from 'react';
+import { render } from 'react-dom';
 
 
 
-// export default class WallcoveringsData [
+// export default class FurnitureData [
 // 	{ manu: 'Casella', images: [
 // 		'./images/1.jpg',
 // 		'./images/66.jpg',
@@ -23,4 +26,5 @@
 // 		'./images/furniture/chipandcowarrior.jpg',
 // 		'./images/furniture/chipnco.png'
 // 	]}
-// 	];
+// 	]
+// 	;
