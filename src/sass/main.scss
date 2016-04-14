@@ -1,12 +1,17 @@
 @import 'normalize-css/normalize';
 @import 'font-awesome/scss/font-awesome';
 
+// @import 'slick-carousel/slick/slick-theme.scss';
+@import 'slick-carousel/slick/slick.scss';
 
-
-
+// html{
+// 	height:100vh;
+// }
 
 .main-component{
 	z-index:999;
+	position:relative;
+	// height:100vh;
 }
 
 .home-nav{
@@ -28,12 +33,99 @@
 // VIEW HOME///////////////////////////
 
 .view-home-slideshow {
+	// height:100vh;
+	overflow:hidden;
 
 }
 
 
+.view-home-slideshow h1 {
+	margin: 0;
+	position: absolute;
+	margin:auto;
+	top: 50px;
+}
 
-.view-home-IMG-SPACE {
+
+.slick-slide img{
+	// position:absolute;
+	// top:0;
+	// left:0;
+	width:100vw;
+	// height:100vh;
+	object-fit:cover;
+
+}
+
+.slick-track{
+	// background-color: red;
+	// height:100%;
+	float:none;
+}
+
+
+.slick-initialized{
+	position: absolute;
+
+}
+
+.slick-list{
+	width: 100vw;
+// height:100%;
+}
+
+.slick-prev{
+	position:absolute;
+	left:0;
+	color:red;
+	background-color: transparent;
+	border: none;
+}
+
+
+.slick-next{
+	position:absolute;
+	right:0;
+	color:red;
+	background-color: transparent;
+	border: none;
+}
+
+.slick-dots{
+	list-style: none;
+	// display:flex;
+	margin:0;
+	padding:0;
+
+}
+
+.slick-dots button{
+	background-color: transparent;
+	border: none;
+	color:blue;
+	// position:absolute;
+	bottom:0;
+}
+
+
+
+
+//ABOUT////////////////////////////////////
+
+
+
+
+
+
+//FURNITURE////////////////////////////////////
+
+.furniture-wrapper{
+
+
+}
+
+
+.furniture-individual-image {
 	position:absolute;
 	top:0;
 	left:0;
@@ -41,12 +133,40 @@
 	height:100%;
 	object-fit:cover;
 	z-index:-9;
+
+}
+
+
+.collection-name-flex{
+	height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.collection-name-box {
+	background-color: white;
+	padding:50px;
+}
+
+.furniture-wrapper h3{
+	margin:0;
+}
+
+.furniture-wrapper a{
+	text-decoration: none;
+}
+
+
+.furniture-wrapper a:hover{
+	color:gray;
 }
 
 
 
 
 
+//LIGHTING////////////////////////////////////
 
 
 
@@ -54,9 +174,21 @@
 
 
 
+//WALLCOVERINGS////////////////////////////////////
 
 
 
+
+
+
+//TEXTILES////////////////////////////////////
+
+
+
+
+
+
+//CONTACt////////////////////////////////////
 
 
 

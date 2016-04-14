@@ -14,13 +14,17 @@ export default class Furniture extends Component {
 
       <div className="furniture-wrapper">
 
-  		  <h3> Antoine Proulx </h3>
+        <div className="collection-name-flex">
+          <div className="collection-name-box">
+  		     <h3><a href="http://www.antoineproulx.com/"> Antoine Proulx</a> </h3>
+          </div>
+        </div>
 
-  			<img src="./images/antoineproulx1.png" alt="ap1"/>
-  			<img src="./images/antoineproulx2.png" alt="ap1"/>
-			  <img src="./images/antoineproulx3.png" alt="ap1"/>
-			  <img src="./images/antoineproulx4.png" alt="ap1"/>
-			  <img src="./images/antoineproulx5.png" alt="ap1"/>
+  			<img className="furniture-individual-image" src="./images/antoineproulx1.png" alt="ap1"/>
+  			<img className="furniture-individual-image" src="./images/antoineproulx5.png" alt="ap1"/>
+			  <img className="furniture-individual-image" src="./images/antoineproulx3.png" alt="ap1"/>
+			  <img className="furniture-individual-image" src="./images/antoineproulx4.png" alt="ap1"/>
+			  <img className="furniture-individual-image" src="./images/antoineproulx2.png" alt="ap1"/>
 
       </div>
 

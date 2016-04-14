@@ -1,27 +1,19 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
-import playArrow from 'material-ui/lib/svg-icons/av/play-arrow';
+import PlayArrow from 'material-ui/lib/svg-icons/av/play-arrow';
+import Slider from 'react-slick';
 
 export default class ViewHome extends Component {
   render() {
 
- //  	$("#view-home-slideshow > div:gt(0)").hide();
 
-	// setInterval(function() { 
- //  	$('#view-home-slideshow > div:first')
- //    .fadeOut(1000)
- //    .next()
- //    .fadeIn(1000)
- //    .end()
- //    .appendTo('#view-home-slideshow');
-	// },  2000);
-
-
-
-
-
-	
-
+    var settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
 
 
 
@@ -31,40 +23,44 @@ export default class ViewHome extends Component {
 
       <h1>Martin Nash Placeholder</h1>
 
-      <playArrow/>
-
-      <div>
-      <img className="view-home-IMG-SPACE" src="./images/antoineproulx4.png"/>
-      </div>
-
-      <div>
-      <img className="view-home-IMG-SPACE" src="./images/antoineproulx1.png"/>
-      </div>
-
-      <div>
-      <img className="view-home-IMG-SPACE" src="./images/antoineproulx6.png"/>
-      </div>
-
-      <div>
-      <img className="view-home-IMG-SPACE" src="./images/antoineproulx3.png"/>
-      </div>
-
-      <div>
-      <img className="view-home-IMG-SPACE" src="./images/66.jpg"/>
-      </div>
-
-      </div>
 
 
 
-  //     	$(document).ready(function(){
-		// $('.view-home-slideshow').slick({
-  // 		slidesToShow: 1,
-  // 		slidesToScroll: 1,
-  // 		autoplay: true,
-  // 		autoplaySpeed: 2000,
-		// });
- 	//    });
+       <Slider {...settings}>
+        <div><h3>
+          <img src="./images/antoineproulx4.png"/>
+              </h3></div>
+
+        <div><h3>
+          <img  src="./images/antoineproulx1.png"/>
+              </h3></div>
+
+        <div><h3>
+          <img src="./images/antoineproulx2.png"/>
+              </h3></div>
+
+
+        <div><h3>
+          <img src="./images/antoineproulx6.png"/>
+              </h3></div>
+
+        <div><h3>
+          <img src="./images/antoineproulx3.png"/>
+              </h3></div>
+
+
+
+        <div><h3>2</h3></div>
+        <div><h3>3</h3></div>
+        <div><h3>4</h3></div>
+        <div><h3>5</h3></div>
+        <div><h3>6</h3></div>
+      </Slider>
+
+
+
+
+    </div>
 
     )
   }
@@ -75,14 +71,11 @@ export default class ViewHome extends Component {
 
 
 
-// $(function(){
-//     $('#view-home-slideshow img:gt(0)').hide();
-//     setInterval(function(){
-//       $('#view-home-slideshow :first-child').fadeOut()
-//          .next('img').fadeIn()
-//          .end().appendTo('#view-home-slideshow');}, 
-//       3000);
-// });
+
+
+
+
+
 
 
 
