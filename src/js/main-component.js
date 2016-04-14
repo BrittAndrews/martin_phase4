@@ -1,47 +1,12 @@
 import React, { Component } from 'react';
+import { render } from 'react-DOM';
 import { Link } from 'react-router';
 import LeftNav from 'material-ui/lib/left-nav';
 import MenuItem from 'material-ui/lib/menus/menu-item';
 import RaisedButton from 'material-ui/lib/raised-button';
-import AppBar from 'material-ui/lib/app-bar';
-import HamburgerIcon from 'material-ui/lib/svg-icons/Navigation/menu';
+import HamburgerIcon from 'material-ui/lib/svg-icons/navigation/menu';
 
 
-
-
-
-// export default class LeftNavOpenRightExample extends React.Component {
-
-//   constructor(props) {
-//     super(props);
-//     this.state = {open: false};
-//   }
-
-//   handleToggle = () => this.setState({open: !this.state.open});
-
-//   render() {
-//     return (
-//       <div>
-//         <RaisedButton
-//           label="Toggle LeftNav"
-//           onTouchTap={this.handleToggle}
-//         />
-//         <LeftNav width={200} openRight={true} open={this.state.open} >
-//           <AppBar title="AppBar"/>
-//         </LeftNav>
-//       </div>
-
-//       {this.props.children}
-//     );
-//   }
-// }
-
-
-
-
-
-
-/////////try to with docked material ui left nav//////////////////////
 
 export default class MainComponent extends Component {
 
@@ -71,7 +36,7 @@ export default class MainComponent extends Component {
            >
 
             <Link className="home-nav" to="/about">
-              <MenuItem onClick={::this.handleClose}>Home</MenuItem>
+              <MenuItem onClick={::this.handleClose}>About</MenuItem>
             </Link>
 
             <Link className="home-nav" to="/furniture">
@@ -94,10 +59,6 @@ export default class MainComponent extends Component {
               <MenuItem onClick={::this.handleClose}>Contact</MenuItem>
             </Link>
 
-            <Link className="home-nav" to="/externallink">
-              <MenuItem onClick={::this.handleClose}>Contact</MenuItem>
-            </Link>
-
 
           </LeftNav>
 
@@ -113,37 +74,5 @@ export default class MainComponent extends Component {
   }
 }
 
-
-
-/////////////////////////////////////////////////original
-
-
-//   render() {
-
-//     return (
-//       <div className="main-component">
-
-        
-//         <LeftNav>
-//           <Link className="home-nav" to="/about">Home</Link>
-//           <Link className="home-nav" to="/furniture">Furniture</Link>
-//           <Link className="home-nav" to="/lighting">Lighting</Link>
-//           <Link className="home-nav" to="/wallcoverings">Wall Coverings</Link>
-//           <Link className="home-nav" to="/textiles">Textiles</Link>
-//           <Link className="home-nav" to="/contact">Contact</Link>
-//           <Link className="home-nav" to="/externallink">Contact</Link>
-//         </LeftNav>
-
-//         <Link to="/">
-//         <img className="logo" src="./images/martin_nash_logo.jpg" alt="nashlogo"/>
-//         </Link>
-
-//         {this.props.children}
-
-
-//       </div>
-//     )
-//   }
-// }
 
 

@@ -1,4 +1,16 @@
+import React, { Component } from 'react';
+import { render } from 'react-DOM';
 
+
+
+export default class Lighting extends Component {
+
+	render(){
+		return(
+			<h1>lighting page</h1>
+		)
+	}
+}
 
 // export default class LightingData [
 // 	{ manu: 'Casella', images: [

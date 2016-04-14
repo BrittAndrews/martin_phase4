@@ -1,4 +1,16 @@
+import React, { Component } from 'react';
+import { render } from 'react-DOM';
 
+
+
+export default class Textiles extends Component {
+
+	render(){
+		return(
+			<h1>textiles page</h1>
+		)
+	}
+}
 
 // export default class TextilesData [
 // 	{ manu: 'Casella', images: [

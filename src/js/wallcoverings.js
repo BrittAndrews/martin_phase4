@@ -1,4 +1,16 @@
+import React, { Component } from 'react';
+import { render } from 'react-DOM';
 
+
+
+export default class WallCoverings extends Component {
+
+	render(){
+		return(
+			<h1>wall coverings page</h1>
+		)
+	}
+}
 
 
 // export default class WallcoveringsData [

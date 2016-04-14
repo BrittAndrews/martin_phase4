@@ -3,16 +3,13 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import MainComponent from './main-component';
-import MainVendors from './main-vendors';
 import ViewHome from './view-home';
-import ViewVendors from './view-vendors';
-// import LeftNav from 'material-ui/lib/left-nav';
-
-// import FurnitureData from './furniture-data';
-// import LightingData from './lighting-data';
-// import WallcoveringsData from './wallcoverings-data';
-// import TextilesData from './textiles-data';
-
+import About from './about';
+import Furniture from './furniture';
+import Lighting from './lighting';
+import WallCoverings from './wallcoverings';
+import Textiles from './textiles';
+import Contact from './contact';
 
 
 
@@ -23,8 +20,12 @@ render((
 
     	<Route path="/" component={MainComponent}>
      	 	<IndexRoute component={ViewHome}/>
-     	 	<Route path="/viewvendors" component={ViewVendors}/>
-    
+     	 	<Route path="about" component={About}/>
+     	 	<Route path="furniture" component={Furniture}/>
+     	 	<Route path="lighting" component={Lighting}/>
+     	 	<Route path="wallcoverings" component={WallCoverings}/>
+     	 	<Route path="textiles" component={Textiles}/>
+     	 	<Route path="contact" component={Contact}/>
    		</Route> 		
 
 

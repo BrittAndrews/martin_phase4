@@ -1,6 +1,35 @@
 import $ from 'jquery';
-import React from 'react';
+import React, { Component } from 'react';
 import { render } from 'react-dom';
+
+
+
+
+export default class Furniture extends Component {
+  render() {
+
+
+
+  	return(
+
+      <div className="furniture-wrapper">
+
+  		  <h3> Antoine Proulx </h3>
+
+  			<img src="./images/antoineproulx1.png" alt="ap1"/>
+  			<img src="./images/antoineproulx2.png" alt="ap1"/>
+			  <img src="./images/antoineproulx3.png" alt="ap1"/>
+			  <img src="./images/antoineproulx4.png" alt="ap1"/>
+			  <img src="./images/antoineproulx5.png" alt="ap1"/>
+
+      </div>
+
+  		)
+
+  }
+}
+
+
 
 
 
