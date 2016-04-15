@@ -2,10 +2,6 @@ import React, { Component, PropTypes } from 'react';
 import { render } from 'react-DOM';
 
 
-
-
-
-
 const baseStyles={
 	position:'absolute', 
 	top:0,
@@ -53,7 +49,7 @@ export default class BackgroundTransition extends Component {
 	}
 
 	transition([current, next]) {
-		console.log('trans', current, next)
+		// console.log('trans', current, next)
 		let { images } = this.props;
 		this.setState({
 			from: images[current],
@@ -67,7 +63,7 @@ export default class BackgroundTransition extends Component {
 	}
 
 	swap([current, next]) {
-		console.log('swap', current, next)
+		// console.log('swap', current, next)
 		let { images } = this.props;
 		this.setState({
 			from: images[current],

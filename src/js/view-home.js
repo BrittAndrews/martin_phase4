@@ -1,22 +1,31 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
-import PlayArrow from 'material-ui/lib/svg-icons/av/play-arrow';
+import BackgroundTransition from './background-transition';
+import Paper from 'material-ui/lib/paper';
 
 
 
 
 export default class ViewHome extends Component {
    render() {
+    return(
+
 
            <BackgroundTransition
             images={[
+              './images/14.jpg',
               './images/66.jpg',
               './images/2.jpg',
               './images/8.jpg',
+              './images/11.jpg',
+              './images/15.jpg',
+              './images/16.jpg',
+              './images/17.jpg',
+              './images/18.jpg'
 
             ]}
           /> 
-
+        )
       }
     }
 

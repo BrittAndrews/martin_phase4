@@ -8,7 +8,6 @@ import HamburgerIcon from 'material-ui/lib/svg-icons/navigation/menu';
 import BackgroundTransition from './background-transition';
 
 
-
 export default class MainComponent extends Component {
 
     constructor(props) {
@@ -29,6 +28,13 @@ export default class MainComponent extends Component {
             {this.props.children}
          </div>
 
+
+
+        <RaisedButton
+          onClick={this.handleToggle}
+        >
+          <HamburgerIcon/>
+        </RaisedButton>
 
           <LeftNav
             docked={false}
@@ -64,11 +70,13 @@ export default class MainComponent extends Component {
 
           </LeftNav>
 
+
+
           <Link to="/">
             <img className="logo" src="./images/martin_nash_logo.jpg" alt="nashlogo"/>
           </Link>
 
-
+   
           
 
         </div>
