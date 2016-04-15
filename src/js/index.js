@@ -10,6 +10,7 @@ import Lighting from './lighting';
 import WallCoverings from './wallcoverings';
 import Textiles from './textiles';
 import Contact from './contact';
+// import SlideShow from './slideshow';
 
 
 
@@ -37,6 +38,9 @@ render((
 
 
 
+// render((
+// 	<SlideShow/>
+// ), document.querySelector('.app'))
 
 
 

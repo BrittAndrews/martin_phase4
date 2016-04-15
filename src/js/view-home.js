@@ -3,67 +3,119 @@ import $ from 'jquery';
 import PlayArrow from 'material-ui/lib/svg-icons/av/play-arrow';
 
 
+
+
 export default class ViewHome extends Component {
-  render() {
+   render() {
 
-    return(
-      <div className="slideshow">
-      </div>
-      )
+           <BackgroundTransition
+            images={[
+              './images/66.jpg',
+              './images/2.jpg',
+              './images/8.jpg',
+
+            ]}
+          /> 
+
+      }
+    }
 
 
-     }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// export default class ViewHome extends Component {
+//   render() {
+
+//     return(
+//       <div className="slideshow">
+//       </div>
+//       )
+
+
+//      }
+// }
 
 
 
   
-    var state = {
-      currentSlide: 0,
-       data        : data
-    }
+//     var state = {
+//       currentSlide: 0,
+//        data        : data
+//     }
      
 
 
 
-   var data = [
-    {
-      id         : "slide1",
-      imagePath  : "./images/66.jpg",
-      imageAlt   : "Slide 1 Image",
-      title      : "Slide 1",
-      subtitle   : "Slide 1 Image SubTitle",
-      text       : "Slide 1 Image Text",
-      action     : "Slide 1 Image Action",
-      actionHref : "href"
-    },
-    {
-      id         : "slide2",
-      imagePath  : "./images/antoineproulx1.png",
-      imageAlt   : "Slide 2 Image",
-      title      : "Slide 2",
-      subtitle   : "Slide 2 Image SubTitle",
-      text       : "Slide 2 Image Text",
-      action     : "Slide 2 Image Action",
-      actionHref : "href"
-   },
-   {
-      id         : "slide3",
-      imagePath  : "./images/antoineproulx2.png",
-      imageAlt   : "Slide 3 Image",
-      title      : "Slide 3",
-      subtitle   : "Slide 3 Image SubTitle",
-      text       : "Slide 3 Image Text",
-      action     : "Slide 3 Image Action",
-      actionHref : "href"
-    }  ,
-  ];
-
-
- 
-
-
-
+//    var data = [
+//     {
+//       id         : "slide1",
+//       imagePath  : "./images/66.jpg",
+//       imageAlt   : "Slide 1 Image",
+//       title      : "Slide 1",
+//       subtitle   : "Slide 1 Image SubTitle",
+//       text       : "Slide 1 Image Text",
+//       action     : "Slide 1 Image Action",
+//       actionHref : "href"
+//     },
+//     {
+//       id         : "slide2",
+//       imagePath  : "./images/antoineproulx1.png",
+//       imageAlt   : "Slide 2 Image",
+//       title      : "Slide 2",
+//       subtitle   : "Slide 2 Image SubTitle",
+//       text       : "Slide 2 Image Text",
+//       action     : "Slide 2 Image Action",
+//       actionHref : "href"
+//    },
+//    {
+//       id         : "slide3",
+//       imagePath  : "./images/antoineproulx2.png",
+//       imageAlt   : "Slide 3 Image",
+//       title      : "Slide 3",
+//       subtitle   : "Slide 3 Image SubTitle",
+//       text       : "Slide 3 Image Text",
+//       action     : "Slide 3 Image Action",
+//       actionHref : "href"
+//     }  ,
+//   ];
 
 
 

@@ -5,6 +5,7 @@ import LeftNav from 'material-ui/lib/left-nav';
 import MenuItem from 'material-ui/lib/menus/menu-item';
 import RaisedButton from 'material-ui/lib/raised-button';
 import HamburgerIcon from 'material-ui/lib/svg-icons/navigation/menu';
+import BackgroundTransition from './background-transition';
 
 
 
@@ -23,10 +24,11 @@ export default class MainComponent extends Component {
       render() {
       return (
          <div className="main-component">
-          <RaisedButton
-            label= {<HamburgerIcon />}
-            onClick={::this.handleToggle}
-          />
+
+         <div className="gallery">
+            {this.props.children}
+         </div>
+
 
           <LeftNav
             docked={false}
@@ -67,7 +69,7 @@ export default class MainComponent extends Component {
           </Link>
 
 
-          {this.props.children}
+          
 
         </div>
     );
