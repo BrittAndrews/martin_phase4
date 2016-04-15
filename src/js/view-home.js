@@ -2,13 +2,28 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import BackgroundTransition from './background-transition';
 import Paper from 'material-ui/lib/paper';
+import Location from 'material-ui/lib/svg-icons/communication/location-on';
 
+
+    // const style = {
+    // height: 100,
+    // width: 100,
+    // margin: 20,
+    // textAlign: 'center',
+    // display: 'inline-block',
+    // };
 
 
 
 export default class ViewHome extends Component {
    render() {
+
+
+
+
     return(
+
+
 
 
            <BackgroundTransition
@@ -25,6 +40,8 @@ export default class ViewHome extends Component {
 
             ]}
           /> 
+          
+
         )
       }
     }

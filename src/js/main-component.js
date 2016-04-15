@@ -72,6 +72,10 @@ export default class MainComponent extends Component {
 
 
 
+
+
+
+
           <Link to="/">
             <img className="logo" src="./images/martin_nash_logo.jpg" alt="nashlogo"/>
           </Link>

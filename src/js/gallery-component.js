@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import $ from 'jquery';
 
 
@@ -54,10 +54,11 @@ var data = [
 ];
 
 
-       // <img src={image} width="200" height="150"/>
 
 
-export default class ViewHome extends Component {
+export default class ImageNavigation extends Component {
+
+
  constructor(...args) {
    super(...args);
    this.state = { image: getCurrentImage() }
@@ -75,6 +76,8 @@ export default class ViewHome extends Component {
  }
 
 }
+
+
 
 
 

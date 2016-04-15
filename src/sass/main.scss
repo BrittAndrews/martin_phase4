@@ -34,22 +34,27 @@
 
 
 // VIEW HOME//////////AND////SLIDESHOW/////////////////
-
-.view-home-slideshow {
-	// position:relative;
-// 	height:100vh;
-// 	overflow:hidden;
-
+.homepage-wrapper{
+	position:relative;
 }
 
 
-// .view-home-slideshow h1 {
-// 	margin: 0;
-// 	position: absolute;
-// 	// margin:auto;
-// 	top: 50px;
-// }
+.homepage-wrapper h1{
+	position:absolute;
+	z-index:90;
+}
 
+.background-transition-home{
+
+}
+
+.paperHome{
+	position:absolute;
+	z-index:999;
+	top: 200px;
+	left: 50vw;
+
+}
 
 
 
