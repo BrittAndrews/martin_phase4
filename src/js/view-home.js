@@ -1,72 +1,122 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 import PlayArrow from 'material-ui/lib/svg-icons/av/play-arrow';
-import Slider from 'react-slick';
+
 
 export default class ViewHome extends Component {
   render() {
 
-
-    var settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
+    return(
+      <div className="slideshow">
+      </div>
+      )
 
 
-
-    return (
-
-    <div className="view-home-slideshow">
-
-      <h1>Martin Nash Placeholder</h1>
-
-
-
-
-       <Slider {...settings}>
-        <div><h3>
-          <img src="./images/antoineproulx4.png"/>
-              </h3></div>
-
-        <div><h3>
-          <img  src="./images/antoineproulx1.png"/>
-              </h3></div>
-
-        <div><h3>
-          <img src="./images/antoineproulx2.png"/>
-              </h3></div>
-
-
-        <div><h3>
-          <img src="./images/antoineproulx6.png"/>
-              </h3></div>
-
-        <div><h3>
-          <img src="./images/antoineproulx3.png"/>
-              </h3></div>
-
-
-
-        <div><h3>2</h3></div>
-        <div><h3>3</h3></div>
-        <div><h3>4</h3></div>
-        <div><h3>5</h3></div>
-        <div><h3>6</h3></div>
-      </Slider>
-
-
-
-
-    </div>
-
-    )
-  }
+     }
 }
 
 
+
+  
+    var state = {
+      currentSlide: 0,
+       data        : data
+    }
+     
+
+
+
+   var data = [
+    {
+      id         : "slide1",
+      imagePath  : "./images/66.jpg",
+      imageAlt   : "Slide 1 Image",
+      title      : "Slide 1",
+      subtitle   : "Slide 1 Image SubTitle",
+      text       : "Slide 1 Image Text",
+      action     : "Slide 1 Image Action",
+      actionHref : "href"
+    },
+    {
+      id         : "slide2",
+      imagePath  : "./images/antoineproulx1.png",
+      imageAlt   : "Slide 2 Image",
+      title      : "Slide 2",
+      subtitle   : "Slide 2 Image SubTitle",
+      text       : "Slide 2 Image Text",
+      action     : "Slide 2 Image Action",
+      actionHref : "href"
+   },
+   {
+      id         : "slide3",
+      imagePath  : "./images/antoineproulx2.png",
+      imageAlt   : "Slide 3 Image",
+      title      : "Slide 3",
+      subtitle   : "Slide 3 Image SubTitle",
+      text       : "Slide 3 Image Text",
+      action     : "Slide 3 Image Action",
+      actionHref : "href"
+    }  ,
+  ];
+
+
+ 
+
+
+
+
+
+
+    // return (
+
+    // <div className="view-home-slideshow">
+
+
+
+    //    <Slider {...settings}>
+    //     <div><h3>
+    //       <img src="./images/66.jpg"/>
+    //           </h3></div>
+
+    //     <div><h3>
+    //       <img  src="./images/antoineproulx1.png"/>
+    //           </h3></div>
+
+    //     <div><h3>
+    //       <img src="./images/antoineproulx2.png"/>
+    //           </h3></div>
+
+
+    //     <div><h3>
+    //       <img src="./images/antoineproulx6.png"/>
+    //           </h3></div>
+
+    //     <div><h3>
+    //       <img src="./images/antoineproulx3.png"/>
+    //           </h3></div>
+
+    //     <div><h3>
+    //       <img src="./images/66.jpg"/>
+    //           </h3></div>
+
+    //     <div><h3>
+    //       <img src="./images/5 copy.jpg"/>
+    //           </h3></div>
+
+    //     <div><h3>
+    //       <img src="./images/3 copy.jpg"/>
+    //           </h3></div>
+
+    //     <div><h3>
+    //       <img src="./images/8.jpg"/>
+    //           </h3></div>
+
+    //   </Slider>
+
+
+
+
+    // </div>
 
 
 
