@@ -6,108 +6,126 @@ import ImageNavigation from './gallery-component';
 
 
 
-// export default class Furniture extends Component {
-//   render() {
-
-
-
-//   	return(
-
-
-
-//   		)
-//   }
-// }
-
-
-
-
-
-let currentManuIndex = 0;
-let currentImageIndex = 0;
-
-function getCurrentImage() {
- var manuCount = data.length;
- if (currentManuIndex < 0) {
-   currentManuIndex = 0;
- }
- var obj = data[Math.min(currentManuIndex, manuCount-1)];
- var imageCount = obj.images.length;
- if (currentImageIndex < 0) {
-   currentImageIndex = 0;
- }
- var img = obj.images[Math.min(currentImageIndex, imageCount-1)];
- return img;
-}
-
-function nextImage() {
- currentImageIndex++
- return getCurrentImage();
-}
-
-function prevImage() {
- currentImageIndex--;
- return getCurrentImage();
-}
-
-function nextManu() {
- currentManuIndex++;
- currentImageIndex = 0;
- return getCurrentImage();
-}
-
 var data = [
- { manu: 'Casella', images: [
-   'http://s.hswstatic.com/gif/furniture-restoration-300x300.jpg',
-   'http://s3.amazonaws.com/afanews_articles/01062/DP255629.png',
-   'http://tfblog.tenantfile.com/wp-content/uploads/2015/07/modern-furniture-wall-decor-ideas-house-plans-sofa-design-loughton-creative-design-sofachairbedcarpet-creative-sofa-bed-designs-creative-design-sofachairbedcarpet-creative-sofa-designs-cre.jpg',
-   'http://mindbodyspiritinc.com/wp-content/uploads/2015/12/furniture-boston.jpg',
-   'https://www.afwonline.com/furniture/images/dining-room/rustico.jpg'
+ { manu: 'Antoine Proulx',
+   link: 'http://www.antoineproulx.com/',
+      images: [
+   './images/antoineproulx2.png',
+   './images/antoineproulx1.png',
+   './images/antoineproulx5.png',
+   './images/antoineproulx4.png',
+   './images/antoineproulx3.png' 
  ]},
 
- { manu: 'Nilson', images: [
-   'http://www.designsponge.com/wp-content/uploads/2010/07/284-AUK177a1.jpg',
+ { manu: 'William Switzer', 
+   link: 'http://www.antoineproulx.com/',
+      images: [
+   './images/145.jpg', 
    'http://fillmurray.com/20/20/n2',
    'http://fillmurray.com/20/20/n3',
    'http://fillmurray.com/20/20/n4',
    'http://fillmurray.com/20/20/n5'
- ]}
-];
+ ]},
 
+  { manu: 'Chip and Company', 
+    link: 'http://www.antoineproulx.com/',
+      images: [
+   './images/chipnco.png',
+   './images/antoineproulx1.png',
+   './images/antoineproulx5.png',
+   './images/antoineproulx4.png',
+   './images/antoineproulx3.png' 
+ ]},
+
+  { manu: 'Costantini Design', 
+    link: 'http://www.antoineproulx.com/',
+      images: [
+   './images/3.jpg',
+   './images/antoineproulx1.png',
+   './images/antoineproulx5.png',
+   './images/antoineproulx4.png',
+   './images/antoineproulx3.png' 
+ ]},
+
+  { manu: 'Interior Crafts INC', 
+    link: 'http://www.antoineproulx.com/',
+      images: [
+   './images/7.jpg',
+   './images/antoineproulx1.png',
+   './images/antoineproulx5.png',
+   './images/antoineproulx4.png',
+   './images/antoineproulx3.png' 
+ ]},
+
+   { manu: 'Marian Jamieson',
+     link: 'http://www.antoineproulx.com/', 
+      images: [
+   './images/5.jpg',
+   './images/antoineproulx1.png',
+   './images/antoineproulx5.png',
+   './images/antoineproulx4.png',
+   './images/antoineproulx3.png' 
+ ]},
+
+   { manu: 'Marjorie Skouras', 
+     link: 'http://www.antoineproulx.com/',
+      images: [
+   './images/16.jpg',
+   './images/antoineproulx1.png',
+   './images/antoineproulx5.png',
+   './images/antoineproulx4.png',
+   './images/antoineproulx3.png' 
+ ]},
+
+   { manu: ' Orior NY',
+     link: 'http://www.antoineproulx.com/', 
+      images: [
+   './images/8.jpg',
+   './images/antoineproulx1.png',
+   './images/antoineproulx5.png',
+   './images/antoineproulx4.png',
+   './images/antoineproulx3.png' 
+ ]},
+
+   { manu: 'Scala Luxury', 
+     link: 'http://www.antoineproulx.com/',
+      images: [
+   './images/9.jpg',
+   './images/antoineproulx1.png',
+   './images/antoineproulx5.png',
+   './images/antoineproulx4.png',
+   './images/antoineproulx3.png' 
+ ]},
+
+   { manu: 'Sylvan SF', 
+     link: 'http://www.antoineproulx.com/',
+      images: [
+   './images/66.jpg',
+   './images/antoineproulx1.png',
+   './images/antoineproulx5.png',
+   './images/antoineproulx4.png',
+   './images/antoineproulx3.png' 
+ ]},
+
+
+
+];
 
 
 
 export default class Furniture extends Component {
 
+   render() {
 
- constructor(...args) {
-   super(...args);
-   this.state = { image: getCurrentImage() }
- }
-
- render() {
-   let { image }  = this.state;
    return (
-          <div className="furniture-wrapper">
 
-        <div className="collection-name-flex">
-          <div className="collection-name-box">
-           <h3><a href="http://www.antoineproulx.com/"> Antoine Proulx</a> </h3>
-          </div>
-        </div>
-
-        <div style={{width: '100%', height: '100vh', backgroundImage: `url(${image})`, backgroundSize: 'cover', position: 'relative'}}>
-       <button style={{position: 'absolute', left: 20, top: '50vh'}} onClick={() => this.setState({image: prevImage()})}>←</button>
-       <button style={{position: 'absolute', right: 20, top: '50vh'}}  onClick={() => this.setState({image: nextImage()})}>→</button>
-       <button  style={{position: 'absolute', left: '50%', bottom: 20}}  onClick={() => this.setState({image: nextManu()})}>↓</button>
-        </div>
-
-      </div>
-     
+     <ImageNavigation data={data}/>
    )
  }
 
 }
+
+
 
 
 

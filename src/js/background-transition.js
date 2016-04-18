@@ -20,6 +20,7 @@ export default class BackgroundTransition extends Component {
 
 	constructor(...args) {
 		super(...args);
+		this.stopTransition = false;
 		this.state = {
 			from: '',
 			to: '',
@@ -33,6 +34,10 @@ export default class BackgroundTransition extends Component {
 		let next = 1;
 
 		this.swap([current, next]);
+	}
+
+	componentWillUnmount() {
+		this.stopTransition = true;
 	}
 
 	getNext([current, next]) {
@@ -49,6 +54,9 @@ export default class BackgroundTransition extends Component {
 	}
 
 	transition([current, next]) {
+		if (this.stopTransition) {
+			return;
+		}
 		// console.log('trans', current, next)
 		let { images } = this.props;
 		this.setState({
@@ -63,6 +71,9 @@ export default class BackgroundTransition extends Component {
 	}
 
 	swap([current, next]) {
+		if (this.stopTransition) {
+			return;
+		}
 		// console.log('swap', current, next)
 		let { images } = this.props;
 		this.setState({
