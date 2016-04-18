@@ -33,7 +33,7 @@ export default class MainComponent extends Component {
         <RaisedButton
           onClick={this.handleToggle}
         >
-          <HamburgerIcon/>
+          //  <span className="menu"> menu </span>
         </RaisedButton>
 
           <LeftNav

@@ -10,6 +10,8 @@ var data = [
  { manu: 'Antoine Proulx',
    link: 'http://www.antoineproulx.com/',
    cat: 'Furniture Vendors',
+   para: 'Founded in 1992 by Marc Desplaines who launched the U.S corp. of renowned Japanese fashion designer Yohji Yamamoto in NYC. The Antoine Proulx collection of handcrafted furniture was designed by Marc out of his frustration at not being able to find what he was looking for in the market..',
+   location: 'Phoenix, AZ',
       images: [
    './images/antoineproulx2.png',
    './images/antoineproulx1.png',
@@ -21,17 +23,25 @@ var data = [
  { manu: 'William Switzer', 
    link: 'http://www.antoineproulx.com/',
    cat: 'Furniture Vendors',
+   para:'William Switzer’s three collections furnish a handful of exceptional spaces, throughout the world, designed by professionals with an eye for the exquisite. We honour the tradition of furniture as a work of art. Guided by established principles of taste, we create antique reproductions of furniture that has graced the most stately homes in European history.',
+   location:'Vancouver, British Columbia',
+
       images: [
-   './images/145.jpg', 
-   'http://fillmurray.com/20/20/n2',
-   'http://fillmurray.com/20/20/n3',
-   'http://fillmurray.com/20/20/n4',
-   'http://fillmurray.com/20/20/n5'
+   './images/williamswitzer2.jpg', 
+   './images/williamswitzer1.jpg',
+   './images/williamswitzer4.jpg',
+   './images/williamswitzer5.jpg',
+   './images/williamswitzer6.jpg',
+   './images/williamswitzer7.jpg',
+   './images/williamswitzer8.jpg',
+   './images/williamswitzer9.jpg'
  ]},
 
   { manu: 'Chip and Company', 
     link: 'http://www.antoineproulx.com/',
     cat: 'Furniture Vendors',
+    para:'William Switzer’s three collections furnish a handful of exceptional spaces, throughout the world, designed by professionals with an eye for the exquisite. We honour the tradition of furniture as a work of art. Guided by established principles of taste, we create antique reproductions of furniture that has graced the most stately homes in European history.',
+    location:'',
       images: [
    './images/chipnco.png',
    './images/antoineproulx1.png',
@@ -43,6 +53,8 @@ var data = [
   { manu: 'Costantini Design', 
     link: 'http://www.antoineproulx.com/',
     cat: 'Furniture Vendors',
+    para:'William Switzer’s three collections furnish a handful of exceptional spaces, throughout the world, designed by professionals with an eye for the exquisite. We honour the tradition of furniture as a work of art. Guided by established principles of taste, we create antique reproductions of furniture that has graced the most stately homes in European history.',
+    location:'',
       images: [
    './images/3.jpg',
    './images/antoineproulx1.png',
@@ -54,6 +66,8 @@ var data = [
   { manu: 'Interior Crafts INC', 
     link: 'http://www.antoineproulx.com/',
     cat: 'Furniture Vendors',
+    para:'William Switzer’s three collections furnish a handful of exceptional spaces, throughout the world, designed by professionals with an eye for the exquisite. We honour the tradition of furniture as a work of art. Guided by established principles of taste, we create antique reproductions of furniture that has graced the most stately homes in European history.',
+    location:'',
       images: [
    './images/7.jpg',
    './images/antoineproulx1.png',
@@ -65,6 +79,8 @@ var data = [
    { manu: 'Marian Jamieson',
      link: 'http://www.antoineproulx.com/', 
      cat: 'Furniture Vendors',
+     para:'',
+     location:'',
       images: [
    './images/5.jpg',
    './images/antoineproulx1.png',
@@ -76,6 +92,8 @@ var data = [
    { manu: 'Marjorie Skouras', 
      link: 'http://www.antoineproulx.com/',
      cat: 'Furniture Vendors',
+     para:'',
+     location:'',
       images: [
    './images/16.jpg',
    './images/antoineproulx1.png',
@@ -87,6 +105,8 @@ var data = [
    { manu: ' Orior NY',
      link: 'http://www.antoineproulx.com/', 
      cat: 'Furniture Vendors',
+     para:'',
+     location:'',
       images: [
    './images/8.jpg',
    './images/antoineproulx1.png',
@@ -98,6 +118,8 @@ var data = [
    { manu: 'Scala Luxury', 
      link: 'http://www.antoineproulx.com/',
      cat: 'Furniture Vendors',
+     para:'',
+     location:'',
       images: [
    './images/9.jpg',
    './images/antoineproulx1.png',
@@ -109,6 +131,8 @@ var data = [
    { manu: 'Sylvan SF', 
      link: 'http://www.antoineproulx.com/',
      cat: 'Furniture Vendors',
+     para:'',
+     location:'',
       images: [
    './images/66.jpg',
    './images/antoineproulx1.png',
@@ -137,38 +161,3 @@ export default class Furniture extends Component {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-// export default class FurnitureData [
-// 	{ manu: 'Casella', images: [
-// 		'./images/1.jpg',
-// 		'./images/66.jpg',
-// 		'./images/8.jpg',
-// 		'./images/14.jpg',
-// 		'./images/16.jpg'
-// 	]},
-// 	{ manu: 'Antoine Proulx', images: [
-// 		'./images/furniture/antoineproulx1.png',
-// 		'./images/furniture/antoineproulx2.png',
-// 		'./images/furniture/antoineproulx3.png',
-// 		'./images/furniture/antoineproulx4.png',
-// 		'./images/furniture/antoineproulx5.png'
-// 	]},
-// 	{ manu: 'Chip and Company', images: [
-// 		'./images/furniture/ChipandCompany-7512.jpg',
-// 		'./images/furniture/ChipandCompany-8239.jpg',
-// 		'./images/furniture/ChipandCompany-web-01.jpg',
-// 		'./images/furniture/chipandcowarrior.jpg',
-// 		'./images/furniture/chipnco.png'
-// 	]}
-// 	]
-// 	;

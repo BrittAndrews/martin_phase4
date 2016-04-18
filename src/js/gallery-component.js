@@ -72,6 +72,21 @@ export default class ImageNavigation extends Component {
    return this.getCurrentImage();
   }
 
+  // nextManu() {
+  //   if (this.currentManuIndex = 0){
+  //       this.currentManuIndex++;
+  //       this.currentImageIndex = 0;
+  //       return this.getCurrentImage();
+  //     }else {return this.getCurrentImage()};
+  // }
+
+  upManu() {
+   this.currentManuIndex--;
+   this.currentImageIndex = 0;
+   return this.getCurrentImage();
+
+  }
+
  getCurrentImage() {
     let {data} = this.props;
     var manuCount = data.length;
@@ -89,7 +104,7 @@ export default class ImageNavigation extends Component {
 
   render() {
    let { image }  = this.state;
-   let { link, manu, cat } = this.props.data[this.currentManuIndex];
+   let { link, manu, cat, para, location } = this.props.data[this.currentManuIndex];
    return (
     <div className="gallery-wrapper">
 
@@ -98,6 +113,10 @@ export default class ImageNavigation extends Component {
           <div className="gallery-cat"> { cat } </div>
           <br/>
           <a className="manu-link" href={ link }>{ manu }</a>
+          <div className="gallery-location"> { location } </div>
+          <br/>
+          <div className="gallery-para"> { para } </div>
+          <br/>
         </div>
        </div>
      <div className="image-nav-wrapper" style={{ backgroundImage: `url(${image})`}}>
@@ -106,7 +125,9 @@ export default class ImageNavigation extends Component {
 
        <button className="left-button" onClick={() => this.setState({image: this.prevImage()})}> ◀︎ </button>
        <button className="right-button" onClick={() => this.setState({image: this.nextImage()})}>▶︎ </button>
-       <button className="down-button" onClick={() => this.setState({image: this.nextManu()})}> <span>NEXT VENDOR</span> <br/> ▼ </button>
+       <button className="up-button" onClick={() => this.setState({image: this.upManu()})}>  ▲<br/><span className="prev">PREV<br/> VENDOR</span>  </button>
+       <button className="down-button" onClick={() => this.setState({image: this.nextManu()})}> <span className="next">NEXT<br/> VENDOR</span> <br/> ▼ </button>
+
      </div>
      </div>
 
