@@ -89,14 +89,27 @@ export default class ImageNavigation extends Component {
 
   render() {
    let { image }  = this.state;
-   let { link } = this.props.data[this.currentManuIndex].link;
+   let { link, manu, cat } = this.props.data[this.currentManuIndex];
    return (
-     <div style={{width: '100%', height: '100vh', backgroundImage: `url(${image})`, backgroundSize: 'cover', position: 'relative'}}>
-       <a href={ link }>{ this.props.data[this.currentManuIndex].manu }</a>
-       <button style={{position: 'absolute', left: 20, top: '50vh'}} onClick={() => this.setState({image: this.prevImage()})}>←</button>
-       <button style={{position: 'absolute', right: 20, top: '50vh'}}  onClick={() => this.setState({image: this.nextImage()})}>→</button>
-       <button  style={{position: 'absolute', left: '50%', bottom: 20}}  onClick={() => this.setState({image: this.nextManu()})}>↓</button>
+    <div className="gallery-wrapper">
+
+       <div className="manufacturers-box">
+        <div className="manufacturers-flex">
+          <div className="gallery-cat"> { cat } </div>
+          <br/>
+          <a className="manu-link" href={ link }>{ manu }</a>
+        </div>
+       </div>
+     <div className="image-nav-wrapper" style={{ backgroundImage: `url(${image})`}}>
+       
+
+
+       <button className="left-button" onClick={() => this.setState({image: this.prevImage()})}> ◀︎ </button>
+       <button className="right-button" onClick={() => this.setState({image: this.nextImage()})}>▶︎ </button>
+       <button className="down-button" onClick={() => this.setState({image: this.nextManu()})}> <span>NEXT VENDOR</span> <br/> ▼ </button>
      </div>
+     </div>
+
    )
  }
 

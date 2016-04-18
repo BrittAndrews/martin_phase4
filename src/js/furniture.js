@@ -9,6 +9,7 @@ import ImageNavigation from './gallery-component';
 var data = [
  { manu: 'Antoine Proulx',
    link: 'http://www.antoineproulx.com/',
+   cat: 'Furniture Vendors',
       images: [
    './images/antoineproulx2.png',
    './images/antoineproulx1.png',
@@ -19,6 +20,7 @@ var data = [
 
  { manu: 'William Switzer', 
    link: 'http://www.antoineproulx.com/',
+   cat: 'Furniture Vendors',
       images: [
    './images/145.jpg', 
    'http://fillmurray.com/20/20/n2',
@@ -29,6 +31,7 @@ var data = [
 
   { manu: 'Chip and Company', 
     link: 'http://www.antoineproulx.com/',
+    cat: 'Furniture Vendors',
       images: [
    './images/chipnco.png',
    './images/antoineproulx1.png',
@@ -39,6 +42,7 @@ var data = [
 
   { manu: 'Costantini Design', 
     link: 'http://www.antoineproulx.com/',
+    cat: 'Furniture Vendors',
       images: [
    './images/3.jpg',
    './images/antoineproulx1.png',
@@ -49,6 +53,7 @@ var data = [
 
   { manu: 'Interior Crafts INC', 
     link: 'http://www.antoineproulx.com/',
+    cat: 'Furniture Vendors',
       images: [
    './images/7.jpg',
    './images/antoineproulx1.png',
@@ -59,6 +64,7 @@ var data = [
 
    { manu: 'Marian Jamieson',
      link: 'http://www.antoineproulx.com/', 
+     cat: 'Furniture Vendors',
       images: [
    './images/5.jpg',
    './images/antoineproulx1.png',
@@ -69,6 +75,7 @@ var data = [
 
    { manu: 'Marjorie Skouras', 
      link: 'http://www.antoineproulx.com/',
+     cat: 'Furniture Vendors',
       images: [
    './images/16.jpg',
    './images/antoineproulx1.png',
@@ -79,6 +86,7 @@ var data = [
 
    { manu: ' Orior NY',
      link: 'http://www.antoineproulx.com/', 
+     cat: 'Furniture Vendors',
       images: [
    './images/8.jpg',
    './images/antoineproulx1.png',
@@ -89,6 +97,7 @@ var data = [
 
    { manu: 'Scala Luxury', 
      link: 'http://www.antoineproulx.com/',
+     cat: 'Furniture Vendors',
       images: [
    './images/9.jpg',
    './images/antoineproulx1.png',
@@ -99,6 +108,7 @@ var data = [
 
    { manu: 'Sylvan SF', 
      link: 'http://www.antoineproulx.com/',
+     cat: 'Furniture Vendors',
       images: [
    './images/66.jpg',
    './images/antoineproulx1.png',
