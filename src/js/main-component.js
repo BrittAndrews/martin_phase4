@@ -30,10 +30,11 @@ export default class MainComponent extends Component {
 
 
 
-        <RaisedButton
+        <RaisedButton className="raised-button"
           onClick={this.handleToggle}
         >
-          //  <span className="menu"> menu </span>
+            <b><HamburgerIcon/> </b>
+
         </RaisedButton>
 
           <LeftNav

@@ -117,16 +117,15 @@ export default class ImageNavigation extends Component {
           <br/>
           <div className="gallery-para"> { para } </div>
           <br/>
-        </div>
-       </div>
-     <div className="image-nav-wrapper" style={{ backgroundImage: `url(${image})`}}>
-       
-
 
        <button className="left-button" onClick={() => this.setState({image: this.prevImage()})}> ◀︎ </button>
        <button className="right-button" onClick={() => this.setState({image: this.nextImage()})}>▶︎ </button>
        <button className="up-button" onClick={() => this.setState({image: this.upManu()})}>  ▲<br/><span className="prev">PREV<br/> VENDOR</span>  </button>
        <button className="down-button" onClick={() => this.setState({image: this.nextManu()})}> <span className="next">NEXT<br/> VENDOR</span> <br/> ▼ </button>
+        </div>
+       </div>
+       <div className="image-nav-wrapper" style={{ backgroundImage: `url(${image})`}}>
+       
 
      </div>
      </div>
@@ -137,6 +136,39 @@ export default class ImageNavigation extends Component {
 }
 
 
+
+//   render() {
+//    let { image }  = this.state;
+//    let { link, manu, cat, para, location } = this.props.data[this.currentManuIndex];
+//    return (
+//     <div className="gallery-wrapper">
+
+//        <div className="manufacturers-box">
+//         <div className="manufacturers-flex">
+//           <div className="gallery-cat"> { cat } </div>
+//           <br/>
+//           <a className="manu-link" href={ link }>{ manu }</a>
+//           <div className="gallery-location"> { location } </div>
+//           <br/>
+//           <div className="gallery-para"> { para } </div>
+//           <br/>
+//         </div>
+//        </div>
+//        <div className="image-nav-wrapper" style={{ backgroundImage: `url(${image})`}}>
+       
+
+//        <button className="left-button" onClick={() => this.setState({image: this.prevImage()})}> ◀︎ </button>
+//        <button className="right-button" onClick={() => this.setState({image: this.nextImage()})}>▶︎ </button>
+//        <button className="up-button" onClick={() => this.setState({image: this.upManu()})}>  ▲<br/><span className="prev">PREV<br/> VENDOR</span>  </button>
+//        <button className="down-button" onClick={() => this.setState({image: this.nextManu()})}> <span className="next">NEXT<br/> VENDOR</span> <br/> ▼ </button>
+
+//      </div>
+//      </div>
+
+//    )
+//  }
+
+// }
 
 
 
