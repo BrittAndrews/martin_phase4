@@ -75,16 +75,14 @@ var data = [
  ]},
 
    { manu: 'Rebekah Graves',
-     link: 'http://www.antoineproulx.com/', 
+     link: 'http://rebekahgraves.com/', 
      cat: 'Lighting Vendors',
-     para:'',
-     location:'',
+     para:'Rebekah is a Charlottesville, VA artist who creates hand-crafted sculptural lighting.  Mainly, she sculpts in porcelain, fires in a Japanese-style Anagama wood-fired kiln, and casts her shapes using Nepalese and Japanese hand-made paper.',
+     location:'Charlottesville, VA',
       images: [
-   './images/5.jpg',
-   './images/antoineproulx1.png',
-   './images/antoineproulx5.png',
-   './images/antoineproulx4.png',
-   './images/antoineproulx3.png' 
+   './images/rebekahgraves1.png',
+   './images/rebekahgraves2.png',
+   './images/rebekahgraves3.png'
  ]},
 
 

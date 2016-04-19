@@ -2,6 +2,10 @@
 @import 'font-awesome/scss/font-awesome';
 
 
+
+$aqua: #00E0D5;
+
+
 .main-component{
 	z-index:999;
 	position:relative;
@@ -37,7 +41,7 @@
 
 .menu{
 	// position:absolute;
-	
+
 }
 
 
@@ -159,7 +163,7 @@ button:focus {
 }
 
 .left-button:hover{
-	color:blue;
+	color:$aqua;
 }
 
 .right-button{
@@ -174,7 +178,7 @@ button:focus {
 }
 
 .right-button:hover{
-	color:blue;
+	color:$aqua;
 }
 
 // .down-button span{
@@ -194,7 +198,7 @@ button:focus {
 }
 
 .down-button:hover{
-	color:blue;
+	color:$aqua;
 }
 
 .up-button{
@@ -211,7 +215,7 @@ button:focus {
 }
 
 .up-button:hover{
-	color:blue;
+	color:$aqua;
 }
 
 
