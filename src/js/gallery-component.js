@@ -109,24 +109,29 @@ export default class ImageNavigation extends Component {
     <div className="gallery-wrapper">
 
        <div className="manufacturers-box">
+       <div className="box-flex-center">
         <div className="manufacturers-flex">
-          <div className="gallery-cat"> { cat } </div>
+
+               <div className="up-down-flex">
+                 <button className="up-button" onClick={() => this.setState({image: this.upManu()})}>  ↑<br/><span className="prev">PREV<br/> VENDOR</span>  </button><br/>
+                  <div className="gallery-cat"> { cat } </div>
+                    <br/>
+                   <a className="manu-link" href={ link }> <b>{ manu } </b></a><br/><br/>
+                 <button className="down-button" onClick={() => this.setState({image: this.nextManu()})}> <span className="next">NEXT<br/> VENDOR</span> <br/> ↓ </button>
+               </div>
+
           <br/>
-          <a className="manu-link" href={ link }>{ manu }</a>
-          <div className="gallery-location"> { location } </div>
-          <br/>
-          <div className="gallery-para"> { para } </div>
+          <div className="gallery-para"> { para } <br/><br/> (Use left & right arrows to see more images from {manu}) </div>
           <br/>
 
-       <button className="left-button" onClick={() => this.setState({image: this.prevImage()})}> ◀︎ </button>
-       <button className="right-button" onClick={() => this.setState({image: this.nextImage()})}>▶︎ </button>
-       <button className="up-button" onClick={() => this.setState({image: this.upManu()})}>  ▲<br/><span className="prev">PREV<br/> VENDOR</span>  </button>
-       <button className="down-button" onClick={() => this.setState({image: this.nextManu()})}> <span className="next">NEXT<br/> VENDOR</span> <br/> ▼ </button>
+         </div>
         </div>
        </div>
        <div className="image-nav-wrapper" style={{ backgroundImage: `url(${image})`}}>
-       
-
+          <div className="left-right-flex">
+            <button className="left-button" onClick={() => this.setState({image: this.prevImage()})}> ◀︎  </button>
+            <button className="right-button" onClick={() => this.setState({image: this.nextImage()})}> ▶︎</button>
+          </div>
      </div>
      </div>
 

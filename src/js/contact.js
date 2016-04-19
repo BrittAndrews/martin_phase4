@@ -13,6 +13,7 @@ export default class Contact extends Component {
 
 				<div className="contact-flex">
 
+					
 					<h3>The Martin Nash Showroom is located at the</h3>
 
 
@@ -32,7 +33,7 @@ export default class Contact extends Component {
 						For more information, please email us at:
 						<br/>
 
-						martin@martinnash.com
+						<b>martin@martinnash.com</b>
 						<br/>
 
 						<br/>
@@ -40,15 +41,22 @@ export default class Contact extends Component {
 						or call:
 						<br/>
 
-						404-467-6099
+						<b>404-467-6099</b>
+
 
 
 					</span>
+					</div>
 
-				</div>
-				<img src="./images/adac.jpg" alt="adac"/>
+	
+
+
+				 <img src="./images/dontlikeordinary.png" alt="adac"/>
 			</div>
 
 		)
 	}
 }
+						// <div className="adac-img">
+						// 	<img src="./images/adac2.jpg" alt="adac"/>
+						// </div>
