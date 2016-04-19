@@ -43,6 +43,10 @@ export default class MainComponent extends Component {
             onRequestChange={open => this.setState({open})}
            >
 
+            <Link className="home-nav" to="/">
+              <MenuItem onClick={::this.handleClose}>Home</MenuItem>
+            </Link>
+
             <Link className="home-nav" to="/about">
               <MenuItem onClick={::this.handleClose}>About</MenuItem>
             </Link>
@@ -71,22 +75,31 @@ export default class MainComponent extends Component {
           </LeftNav>
 
 
-
-
-
-
-
-          <Link to="/">
+           <Link to="/">
             <img className="logo" src="./images/martin_nash_logo.jpg" alt="nashlogo"/>
           </Link>
 
-   
+
+          <div className="social-icons">
+
+          <Link to="https://www.facebook.com/martin.nash.73">
+            <img className="facebook" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_black-128.png" alt="nashlogo"/>
+          </Link>
+
+           <Link to="https://twitter.com/martinnashadac">
+            <img className="twitter" src="http://image005.flaticon.com/67/png/128/69/69480.png" alt="nashlogo"/>
+          </Link>
+
+            <Link to="https://www.instagram.com/martin.nash/">
+            <img className="instagram" src="http://image005.flaticon.com/67/png/512/69/69366.png" alt="nashlogo"/>
+          </Link>
+
+          
+          </div>
           
 
         </div>
     );
   }
 }
-
-
 
