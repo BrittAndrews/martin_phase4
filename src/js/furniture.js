@@ -4,13 +4,13 @@ import { render } from 'react-dom';
 import ImageNavigation from './gallery-component';
 
 
-
+// BUILD OUT LIST OF ALL MANUFACTURERS INTO NAV/////
 
 var data = [
  { manu: 'Antoine Proulx',
    link: 'http://www.antoineproulx.com/',
-   cat: 'Furniture Vendor:',
-   para: 'Founded in 1992 by Marc Desplaines who launched the U.S corp. of renowned Japanese fashion designer Yohji Yamamoto in NYC. The Antoine Proulx collection of handcrafted furniture was designed by Marc out of his frustration at not being able to find what he was looking for in the market..',
+   // cat: 'Furniture Manufacturers:',
+   // para: 'Founded in 1992 by Marc Desplaines who launched the U.S corp. of renowned Japanese fashion designer Yohji Yamamoto in NYC. The Antoine Proulx collection of handcrafted furniture was designed by Marc out of his frustration at not being able to find what he was looking for in the market..',
    location: 'Phoenix, AZ',
       images: [
    './images/antoineproulx2.png',
@@ -22,7 +22,7 @@ var data = [
 
  { manu: 'William Switzer', 
    link: 'http://www.antoineproulx.com/',
-   cat: 'Furniture Vendor:',
+   // cat: 'Furniture Manufacturers:',
    para:'William Switzer’s three collections furnish a handful of exceptional spaces, throughout the world, designed by professionals with an eye for the exquisite. We honour the tradition of furniture as a work of art. Guided by established principles of taste, we create antique reproductions of furniture that has graced the most stately homes in European history.',
    location:'Vancouver, British Columbia',
 
@@ -39,7 +39,7 @@ var data = [
 
   { manu: 'Chip and Company', 
     link: 'http://www.antoineproulx.com/',
-    cat: 'Furniture Vendor:',
+    // cat: 'Furniture Manufacturers:',
     para:'William Switzer’s three collections furnish a handful of exceptional spaces, throughout the world, designed by professionals with an eye for the exquisite. We honour the tradition of furniture as a work of art. Guided by established principles of taste, we create antique reproductions of furniture that has graced the most stately homes in European history.',
     location:'',
       images: [
@@ -51,7 +51,7 @@ var data = [
 
   { manu: 'Costantini Design', 
     link: 'http://www.antoineproulx.com/',
-    cat: 'Furniture Vendor:',
+    // cat: 'Furniture Manufacturers:',
     para:'William Switzer’s three collections furnish a handful of exceptional spaces, throughout the world, designed by professionals with an eye for the exquisite. We honour the tradition of furniture as a work of art. Guided by established principles of taste, we create antique reproductions of furniture that has graced the most stately homes in European history.',
     location:'',
       images: [
@@ -64,7 +64,7 @@ var data = [
 
   { manu: 'Interior Crafts INC', 
     link: 'http://www.antoineproulx.com/',
-    cat: 'Furniture Vendor:',
+    // cat: 'Furniture Manufacturers:',
     para:'William Switzer’s three collections furnish a handful of exceptional spaces, throughout the world, designed by professionals with an eye for the exquisite. We honour the tradition of furniture as a work of art. Guided by established principles of taste, we create antique reproductions of furniture that has graced the most stately homes in European history.',
     location:'',
       images: [
@@ -77,7 +77,7 @@ var data = [
 
    { manu: 'Marian Jamieson',
      link: 'http://www.antoineproulx.com/', 
-     cat: 'Furniture Vendor:',
+     // cat: 'Furniture Manufacturers:',
      para:'',
      location:'',
       images: [
@@ -90,7 +90,7 @@ var data = [
 
    { manu: 'Marjorie Skouras', 
      link: 'http://www.antoineproulx.com/',
-     cat: 'Furniture Vendor:',
+     // cat: 'Furniture Manufacturers:',
      para:'',
      location:'',
       images: [
@@ -103,7 +103,7 @@ var data = [
 
    { manu: ' Orior NY',
      link: 'http://www.antoineproulx.com/', 
-     cat: 'Furniture Vendor:',
+     // cat: 'Furniture Manufacturers:',
      para:'',
      location:'',
       images: [
@@ -116,7 +116,7 @@ var data = [
 
    { manu: 'Scala Luxury', 
      link: 'http://www.antoineproulx.com/',
-     cat: 'Furniture Vendor:',
+     // cat: 'Furniture Manufacturers:',
      para:'',
      location:'',
       images: [
@@ -129,7 +129,7 @@ var data = [
 
    { manu: 'Sylvan SF', 
      link: 'http://www.antoineproulx.com/',
-     cat: 'Furniture Vendor:',
+     // cat: 'Furniture Manufacturers:',
      para:'',
      location:'',
       images: [

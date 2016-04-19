@@ -120,10 +120,6 @@ export default class ImageNavigation extends Component {
                  <button className="down-button" onClick={() => this.setState({image: this.nextManu()})}> <span className="next">NEXT<br/> VENDOR</span> <br/> ↓ </button>
                </div>
 
-          <br/>
-          <div className="gallery-para"> { para } <br/><br/> (Use left & right arrows to see more images from {manu}) </div>
-          <br/>
-
          </div>
         </div>
        </div>
@@ -140,6 +136,10 @@ export default class ImageNavigation extends Component {
 
 }
 
+
+          // <br/>
+          // // <div className="gallery-para"> { para } <br/><br/> </div>
+          // <br/>
 
 
 //   render() {
